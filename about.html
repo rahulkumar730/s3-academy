@@ -17,6 +17,55 @@ body {
     color: #333;
 }
 
+        /* Header */
+header {
+    background: #031939;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+    padding: 6px 12px;
+    border: none;
+    background: #ffc107;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
 .about {
     padding: 60px 20px;
 }
@@ -172,10 +221,46 @@ body {
         text-align: center;
     }
 }
+        /* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
 
     </style>
 </head>
 <body>
+
+    <header>
+    <div class="header-container">
+        
+        <!-- Logo -->
+        <div class="logo">
+            S3 ACADEMY
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact">
+            <div>📧 S3academy73@gmail.com</div>
+            <div>📞 Admission Enquiry: +91 9728490673</div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+
+    </div>
+</header>
 
     <section class="about">
         <div class="container">
@@ -253,4 +338,5 @@ body {
 
 </body>
 </html>
+
 
