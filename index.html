@@ -15,81 +15,67 @@
 }
 
 /* Header */
-header {
-    background: #031939;
-    padding: 10px 20px;
-    color: #fff;
+.site-header{
+  background:#fff;
+  border-bottom:3px solid #8b0000;
+  position:relative;
 }
 
-/* Header Container */
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/* Top section */
+.header-container{
+  max-width:1200px;
+  margin:auto;
+  padding:10px 20px;
+  display:flex;
+  align-items:center;
+  gap:15px;
 }
 
 /* Logo */
-.logo {
-    font-size: 22px;
-    font-weight: bold;
+.logo{
+  height:70px;
+  width:auto;
 }
 
-/* Contact Section */
-.contact {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 14px;
+/* Title */
+.header-text h1{
+  font-size:2.5rem;
+  color:#8b0000;
+  letter-spacing:2px;
 }
 
-/* Search Bar */
-.search-box {
-    display: flex;
+.header-text p{
+  font-size:1.2rem;
+  font-weight:bold;
 }
 
-.search-box input {
-    padding: 6px 10px;
-    border: none;
-    outline: none;
-    border-radius: 4px 0 0 4px;
-}
-
-.search-box button {
-    padding: 6px 12px;
-    border: none;
-    background: #ffc107;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
+/* Hamburger */
+.menu-toggle{
+  display:none;
+  margin-left:auto;
+  font-size:2rem;
+  cursor:pointer;
+  color:#8b0000;
 }
 
 /* Navbar */
-.navbar {
-    background-color: #3f092f;
-    padding: 12px 20px;
+.navbar{
+  background:#8b0000;
+  width:100%;
 }
 
-/* Navbar container */
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.nav-links{
+  list-style:none;
+  display:flex;
+  justify-content:center;
 }
 
-/* Links */
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.navbar ul li a:hover {
-    color: #ffc107;
+.nav-links li a{
+  display:block;
+  padding:12px 20px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 
@@ -557,39 +543,35 @@ header {
 </head>
 
 <body>
+<header class="site-header">
+  <div class="header-container">
+    <img src="./aa.jpeg" alt="Logo" class="logo">
 
-<header>
-    <div class="header-container">
-        
-        <!-- Logo -->
-        <div class="logo">
-            S3 ACADEMY
-        </div>
-
-        <!-- Contact Info -->
-        <div class="contact">
-            <div>📧 S3academy73@gmail.com</div>
-            <div>📞 Admission Enquiry: +91 9728490673</div>
-        </div>
-
-        <!-- Search -->
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <button>🔍</button>
-        </div>
-
+    <div class="header-text">
+      <h1>S3 ACADEMY</h1>
+      <p>Satyam Shivam Sundaram</p>
     </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#admission">Admission</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./admission.html">Admission</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 
 
 
@@ -806,3 +788,4 @@ header {
 
 </body>
 </html>
+
