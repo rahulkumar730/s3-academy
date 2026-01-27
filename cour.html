@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Courses</title>
+
+<style>
+/* ============ RESET ============ */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Georgia, serif;
+}
+
+body{
+  background:#f4f4f4;
+  line-height:1.6;
+}
+
+/* ============ HEADER ============ */
+.site-header{
+  background:#fff;
+  border-bottom:3px solid #8b0000;
+}
+
+.header-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo{
+  height:70px;
+}
+
+.header-text h1{
+  color:#8b0000;
+  font-size:2.4rem;
+  letter-spacing:2px;
+}
+
+.header-text p{
+  font-weight:bold;
+}
+
+/* ============ TITLE ============ */
+.course-title{
+  background:#8b0000;
+  color:#fff;
+  text-align:center;
+  padding:35px 20px;
+}
+
+.course-title h1{
+  font-size:2.2rem;
+}
+
+/* ============ COURSES GRID ============ */
+.container{
+  max-width:1200px;
+  margin:50px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+}
+
+.course{
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.12);
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.course:hover{
+  transform:translateY(-6px);
+}
+
+.course-header{
+  background:#8b0000;
+  color:#fff;
+  padding:16px;
+}
+
+.course-header h2{
+  font-size:1.2rem;
+}
+
+.course-body{
+  padding:20px;
+}
+
+.course-body h3{
+  color:#8b0000;
+  margin-bottom:12px;
+}
+
+.course-body ul{
+  list-style:none;
+}
+
+.course-body li{
+  padding:7px 0;
+  border-bottom:1px dashed #ccc;
+  font-size:0.95rem;
+}
+
+/* ============ FOOTER ============ */
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
+
+/* ============ RESPONSIVE ============ */
+
+/* Tablets */
+@media (max-width:1024px){
+  .container{
+    grid-template-columns:repeat(2, 1fr);
+  }
+
+  .header-text h1{
+    font-size:2rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width:768px){
+  .header-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .logo{
+    height:60px;
+  }
+
+  .header-text h1{
+    font-size:1.7rem;
+  }
+
+  .course-title h1{
+    font-size:1.6rem;
+  }
+
+  .container{
+    grid-template-columns:1fr;
+    margin:30px auto;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width:480px){
+  .course-body{
+    padding:15px;
+  }
+
+  .course-body li{
+    font-size:0.9rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-container">
+    <img src="./aa.jpeg" alt="Logo" class="logo">
+    <div class="header-text">
+      <h1>S3 ACADEMY</h1>
+      <p>Satyam Shivam Sundaram</p>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TITLE ============ -->
+<section class="course-title">
+  <h1>Computer Courses Syllabus</h1>
+  <p>Basic | DCA | ADCA | Web Designing | Tally | Designing | Typing</p>
+</section>
+
+<!-- ============ COURSES ============ -->
+<div class="container">
+
+<!-- Basic Computer -->
+<div class="course">
+  <div class="course-header"><h2>Basic Computer</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Introduction to Computer</li>
+      <li>Hardware & Software</li>
+      <li>Windows OS</li>
+      <li>MS Word</li>
+      <li>MS Excel</li>
+      <li>MS PowerPoint</li>
+      <li>Internet & Email</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DCA -->
+<div class="course">
+  <div class="course-header"><h2>DCA</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Computer Fundamentals</li>
+      <li>Operating System</li>
+      <li>MS Office</li>
+      <li>MS Access</li>
+      <li>C Programming</li>
+      <li>Internet</li>
+      <li>Project Work</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ADCA -->
+<div class="course">
+  <div class="course-header"><h2>ADCA</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Advanced MS Office</li>
+      <li>Tally with GST</li>
+      <li>DBMS</li>
+      <li>C & C++</li>
+      <li>Core Java</li>
+      <li>HTML & CSS</li>
+      <li>Final Project</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Web Designing -->
+<div class="course">
+  <div class="course-header"><h2>Web Designing</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Web & Internet</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Responsive Design</li>
+      <li>Bootstrap</li>
+      <li>JavaScript</li>
+      <li>Live Project</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Tally -->
+<div class="course">
+  <div class="course-header"><h2>Tally with GST</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Accounting Basics</li>
+      <li>Company Creation</li>
+      <li>Ledger & Voucher</li>
+      <li>Inventory</li>
+      <li>GST & TDS</li>
+      <li>Payroll</li>
+      <li>Practical Project</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Photoshop -->
+<div class="course">
+  <div class="course-header"><h2>Adobe Photoshop</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Graphics Basics</li>
+      <li>Tools & Panels</li>
+      <li>Image Editing</li>
+      <li>Layers & Masks</li>
+      <li>Poster & Banner</li>
+      <li>Export for Web</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CorelDRAW -->
+<div class="course">
+  <div class="course-header"><h2>CorelDRAW</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Vector Graphics</li>
+      <li>Drawing Tools</li>
+      <li>Typography</li>
+      <li>Logo Design</li>
+      <li>Visiting Cards</li>
+      <li>Flex Design</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Typing -->
+<div class="course">
+  <div class="course-header"><h2>Typing (English & Hindi)</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>Keyboard Basics</li>
+      <li>Speed Practice</li>
+      <li>Accuracy Training</li>
+      <li>English Typing</li>
+      <li>Hindi Typing</li>
+      <li>Typing Tests</li>
+    </ul>
+  </div>
+</div>
+
+<!-- DTP -->
+<div class="course">
+  <div class="course-header"><h2>DTP / PageMaker</h2></div>
+  <div class="course-body">
+    <h3>Course Modules</h3>
+    <ul>
+      <li>DTP Fundamentals</li>
+      <li>Page Layout</li>
+      <li>Text Formatting</li>
+      <li>Image Placement</li>
+      <li>Magazine Design</li>
+      <li>Print Output</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p>© 2026 S3 Academy Computer Training Institute | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
